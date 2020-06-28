@@ -122,7 +122,7 @@ ol {
 }
  
 a {
-	color:  #e2e3ed;
+	color:  #527158;
      text-decoration: none;
 }
  
@@ -144,13 +144,8 @@ p {
 	line-height: 1.4em;
 }
  
-img {
- 
-}
- 
- 
 address {
- 
+ font-style: normal;
 }
  
 .content-wrapper {
@@ -216,40 +211,93 @@ address {
   footer .contact {
     margin-bottom: 50px;
   }
+  .contact h4, p {
+    color: #2a423a;
+  }
   
   footer .social-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
   }
   
-  footer .social-icons p {
+  footer .social-icons h2 p {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+  }
+  .social h4 {
+    color: #2a423a;
   }
   
   footer .copyright {
     margin: 20px 0;
   }
-  
+  .copyright p{
+    color: #2a423a;
+  }
   /* -------------------- Mobile Styles - Homepage -------------------- */
   
   /* Hero Area */
+
+
   
   .hero-area {
+    background: url(../img/waterfall.jpg);
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+  }
+  .hero-area h1{
+    color: #fff;
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500; 
+  line-height: 1.2;
   }
   
   /* Aside */
   
   aside {
+    background-color:  #527158;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+  }
+  
+  aside .form{
+    margin-top: 30px;
+  }
+  .form-description h3, p{
+    color: #fff;
+  }
+  .form h3{
+    color: #fff;
+  }
+  
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+  
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
   }
   
   /* Features */
@@ -262,11 +310,15 @@ address {
   
   .features h2 {
     margin-bottom: 60px;
+    color: #2a423a;
   }
   
   .features article {
     width: 63%;
     margin: 30px 0;
+  }
+  .features p{
+    color:#2a423a;
   }
   
   .features .features-items {
@@ -283,6 +335,7 @@ address {
   /* Reviews */
   
   .reviews {
+    background-color: #2a423a;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -290,18 +343,23 @@ address {
   
   .reviews h2 {
     margin-bottom: 40px;
+    line-height: 1;
   }
   
   .reviews h3 {
     width: 55%;
     margin: 20px 0;
   }
+  .reviews h2,h3, p {
+    color: #fff;
+  } 
   
   /* ==========================================================================
      About Page
      ========================================================================== */
   
   .mission {
+    background-color: #527158;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,6 +367,7 @@ address {
   }
   
   .contact-section {
+    background-color: #2a423a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,6 +383,7 @@ address {
      ========================================================================== */
   
   .faq {
+    background-color: #527158;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -340,10 +400,14 @@ address {
   
   .faq h2 {
     margin-bottom: 40px;
+    line-height:1;
   }
   
   .faq-content {
     margin-bottom: 50px;
+  }
+  .faq-content h4 {
+    line-height: 1.33;
   }
   
   /* ==========================================================================
@@ -443,6 +507,14 @@ address {
       max-width: 640px;
       margin: 100px 0;
     }
+    h2 {
+      font-size: 2.25em;
+      line-height: 1.333;
+    }
+    h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+  }
   
     /* Header */
     header {
@@ -453,6 +525,9 @@ address {
     header .content-wrapper {
       width: 100%;
       justify-content: space-between;
+    }
+    header figure {
+      width: 30%;
     }
   
     header nav {
@@ -467,6 +542,13 @@ address {
       display: none;
     }
     /* Hero Area */
+    .hero-area h1 {
+      background: url(img/waterfall.jpg);
+      font-size: 3em;
+      line-height: 1;
+      margin: 0;
+      color: #fff;
+  }
   
     /* Aside */
     aside .content-wrapper {
@@ -481,6 +563,12 @@ address {
       width: 40%;
       margin: 0;
     }
+    .form-description h3, p{
+      color: #fff;
+    }
+    .form h3{
+      color: #fff;
+    }
   
     /* Features */
     .features article {
@@ -494,6 +582,9 @@ address {
     .features .features-item-description {
       width: 62%;
     }
+    .features h2 p{
+      color: #2a423a;
+    }
   
     /* Reviews */
     .reviews article {
@@ -504,6 +595,9 @@ address {
     .reviews article div {
       width: 49%;
     }
+    .reviews h2,h3, p {
+      color: #fff;
+    } 
   
     /* Footer */
     footer .content-wrapper {
@@ -515,10 +609,19 @@ address {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-direction: row;
     }
   
     footer .contact {
       margin-bottom: 0;
+    }
+    footer h4 {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+    }
+  
+    footer p {
+        line-height: 1.285;
     }
   
     footer .copyright {
@@ -553,10 +656,8 @@ address {
     /* ==========================================================================
      FAQ Page
      ========================================================================== */
-  
-     header {
-      padding: 15px 0;
-    }
+     
+     
     
     .faq .content-wrapper {
       justify-content: space-between;
@@ -569,18 +670,44 @@ address {
     .faq h2 {
       width: 100%;
     }
+    .faq h4,
+  .faq p {
+      font-size: .875em;
+      line-height: 1.125;
+  }
   }
   /****************************************************************/
   @media only screen and (min-width:1200px) {
     /***DESKTOP STYLES HERE***/
-  
+    header {
+      padding: 15px 0;
+    }
+
     .content-wrapper {
       max-width: 960px;
     }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+      font-size: 1.875em;
+  }
+
+  p {
+      font-size: 1.125em;
+      line-height: 1.333;
+  }
   
     /* Hero */
+    .hero-area {
+      background: url(../img/waterfall.jpg);
+    }
     .hero-area h1 {
       width: 60%;
+      color: #fff;
   }
   
     /* Aside */
@@ -592,6 +719,12 @@ address {
     aside .content-wrapper .form {
       width: 30%;
     }
+    .form-description h3, p{
+      color: #fff;
+    }
+    .form h3{
+      color: #fff;
+    }
   
     /* Features */
   
@@ -602,8 +735,18 @@ address {
     .features article {
       flex-basis: 33%;
     }
+    .features h2 p{
+      color: #2a423a;
+    }
     
     /* Reviews */
+    .reviews h2 {
+      padding-bottom: 50px;
+      color: #fff;
+    }
+    .reviews h2,h3, p {
+      color: #fff;
+    } 
     .reviews article div {
       width: 42%;
     }
@@ -615,6 +758,10 @@ address {
     .mission h2,
     .contact-section .content-wrapper h2 {
         width: 95%;
+        font-size: 3em;
+    }
+    .contact-content h4 {
+      font-size: 1.875em;
     }
   
     /* ==========================================================================
@@ -622,7 +769,13 @@ address {
     ========================================================================== */
     .faq h2 {
       width: 100%;
+      font-size: 3em;
     }
+    .faq h4,
+  .faq p {
+      font-size: 1.125em;
+      line-height: 1;
+  }
   
   }
   
