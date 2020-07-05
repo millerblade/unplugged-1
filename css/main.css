@@ -238,10 +238,8 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
-  background: url(../img/waterfall.jpg);
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
+  background: url("/img/waterfall-1.jpg") center no-repeat #333;
+  background-size: cover;
 }
 .hero-area h1 {
   color: #fff;
