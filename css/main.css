@@ -97,47 +97,54 @@ textarea {
      Author's custom styles
      ========================================================================== */
 
-.content-wrapper {
-  width: 90%;
-  margin: 50px 0;
-}
-/*****General Styles *****/
+/* General Styles */
 
 html {
   font-size: 16px;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
   font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  color: #e2e3ed;
   text-align: left;
 }
 
 ul,
 ol {
-  list-style: none;
+  list-style-type: none;
 }
 
 a {
-  color: #527158;
+  color: #e2e3ed;
   text-decoration: none;
 }
 
 h2 {
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
   font-size: 1.875em;
 }
 
 h3,
 h4 {
   font-family: "Poppins", sans-serif;
-  margin: 20px 0;
+  font-weight: 500;
   font-size: 1.125em;
+  margin: 20px 0;
 }
 
 p {
   font-size: 0.875em;
-  line-height: 1.4em;
+  line-height: 1.285;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
 }
 
 address {
@@ -153,6 +160,7 @@ address {
 
 header,
 footer {
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,27 +179,44 @@ header .content-wrapper {
   flex-flow: row wrap;
 }
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .header-divider {
-  width: 100%;
+  background: #3a3a3a;
   height: 1px;
+  width: 100%;
   margin: 10px 0 20px 0;
 }
 
 header nav {
+  width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
 }
 
 header nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  width: 100%;
+}
+
+header nav ul li {
+  font-size: 1.125em;
 }
 
 footer {
+  text-align: center;
   flex-direction: column;
 }
 
@@ -207,10 +232,6 @@ footer .content-wrapper {
 footer .contact {
   margin-bottom: 50px;
 }
-.contact h4,
-p {
-  color: #2a423a;
-}
 
 footer .social-icons {
   display: flex;
@@ -218,31 +239,31 @@ footer .social-icons {
   align-items: center;
 }
 
-footer .social-icons h2 p {
+footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.social h4 {
-  color: #2a423a;
 }
 
 footer .copyright {
   margin: 20px 0;
 }
-.copyright p {
-  color: #2a423a;
-}
+
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
 /* Hero Area */
 
 .hero-area {
-  background: url("/img/waterfall-1.jpg") center no-repeat #333;
+  background: url(../img/waterfall-1.jpg);
   background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
+
 .hero-area h1 {
-  color: #fff;
   font-size: 2.25em;
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -252,7 +273,7 @@ footer .copyright {
 /* Aside */
 
 aside {
-  background-color: #527158;
+  background-color: #1a2c20;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -261,13 +282,6 @@ aside {
 
 aside .form {
   margin-top: 30px;
-}
-.form-description h3,
-p {
-  color: #fff;
-}
-.form h3 {
-  color: #fff;
 }
 
 input[type="text"] {
@@ -295,6 +309,9 @@ input[type="button"] {
 /* Features */
 
 .features {
+  background: url("../img/retreat-features-1.png");
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -302,15 +319,11 @@ input[type="button"] {
 
 .features h2 {
   margin-bottom: 60px;
-  color: #2a423a;
 }
 
 .features article {
   width: 63%;
   margin: 30px 0;
-}
-.features p {
-  color: #2a423a;
 }
 
 .features .features-items {
@@ -321,13 +334,14 @@ input[type="button"] {
 }
 
 .features p {
+  text-align: center;
   margin: 0;
 }
 
 /* Reviews */
 
 .reviews {
-  background-color: #2a423a;
+  background-color: #1a2c20;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -341,11 +355,6 @@ input[type="button"] {
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
-}
-.reviews h2,
-h3,
-p {
-  color: #fff;
 }
 
 /* ==========================================================================
@@ -400,8 +409,9 @@ p {
 .faq-content {
   margin-bottom: 50px;
 }
+
 .faq-content h4 {
-  line-height: 1.33;
+  line-height: 1.333;
 }
 
 /* ==========================================================================
@@ -501,10 +511,12 @@ p {
     max-width: 640px;
     margin: 100px 0;
   }
+
   h2 {
     font-size: 2.25em;
     line-height: 1.333;
   }
+
   h3 {
     font-size: 1.5em;
     line-height: 1.25;
@@ -520,6 +532,7 @@ p {
     width: 100%;
     justify-content: space-between;
   }
+
   header figure {
     width: 30%;
   }
@@ -536,12 +549,15 @@ p {
     display: none;
   }
   /* Hero Area */
+
+  .hero-area {
+    min-height: 600px;
+  }
+
   .hero-area h1 {
-    background: url(img/waterfall.jpg);
     font-size: 3em;
     line-height: 1;
     margin: 0;
-    color: #fff;
   }
 
   /* Aside */
@@ -557,15 +573,13 @@ p {
     width: 40%;
     margin: 0;
   }
-  .form-description h3,
-  p {
-    color: #fff;
-  }
-  .form h3 {
-    color: #fff;
-  }
 
   /* Features */
+
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
   .features article {
     display: flex;
     justify-content: center;
@@ -577,32 +591,36 @@ p {
   .features .features-item-description {
     width: 62%;
   }
-  .features h2 p {
-    color: #2a423a;
-  }
 
   /* Reviews */
   .reviews article {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-between;
   }
+  .reviews article figure .reviews article div {
+    width: 49%;
+  }
+
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
-  .reviews h2,
-  h3,
-  p {
-    color: #fff;
-  }
 
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
   /* Footer */
   footer .content-wrapper {
     width: 65%;
     margin: 100px 0;
   }
 
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -612,6 +630,7 @@ p {
   footer .contact {
     margin-bottom: 0;
   }
+
   footer h4 {
     font-size: 1.5em;
     margin-bottom: 40px;
@@ -650,6 +669,10 @@ p {
     align-items: flex-start;
   }
 
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
   /* ==========================================================================
      FAQ Page
      ========================================================================== */
@@ -665,15 +688,17 @@ p {
   .faq h2 {
     width: 100%;
   }
+
   .faq h4,
   .faq p {
     font-size: 0.875em;
     line-height: 1.125;
   }
 }
-/****************************************************************/
+
 @media only screen and (min-width: 1200px) {
-  /***DESKTOP STYLES HERE***/
+  /*Desktop styles here*/
+
   header {
     padding: 15px 0;
   }
@@ -695,14 +720,10 @@ p {
     font-size: 1.125em;
     line-height: 1.333;
   }
-
   /* Hero */
-  .hero-area {
-    background: url(../img/waterfall.jpg);
-  }
   .hero-area h1 {
-    width: 60%;
-    color: #fff;
+    font-size: 3.75em;
+    width: 80%;
   }
 
   /* Aside */
@@ -714,12 +735,9 @@ p {
   aside .content-wrapper .form {
     width: 30%;
   }
-  .form-description h3,
-  p {
-    color: #fff;
-  }
-  .form h3 {
-    color: #fff;
+
+  .form-description p {
+    font-size: 1.125em;
   }
 
   /* Features */
@@ -731,22 +749,18 @@ p {
   .features article {
     flex-basis: 33%;
   }
-  .features h2 p {
-    color: #2a423a;
-  }
 
   /* Reviews */
-  .reviews h2 {
-    padding-bottom: 50px;
-    color: #fff;
-  }
-  .reviews h2,
-  h3,
-  p {
-    color: #fff;
-  }
   .reviews article div {
     width: 42%;
+  }
+
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
+  footer h4 {
+    font-size: 1.875em;
   }
 
   /* ==========================================================================
@@ -758,6 +772,7 @@ p {
     width: 95%;
     font-size: 3em;
   }
+
   .contact-content h4 {
     font-size: 1.875em;
   }
@@ -769,6 +784,7 @@ p {
     width: 100%;
     font-size: 3em;
   }
+
   .faq h4,
   .faq p {
     font-size: 1.125em;
