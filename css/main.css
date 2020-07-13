@@ -230,12 +230,10 @@ footer .content-wrapper {
 }
 
 footer .contact {
-  
   margin-bottom: 50px;
 }
 
 footer .social-icons {
-
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -311,7 +309,7 @@ input[type="button"] {
 /* Features */
 
 .features {
-  background: url("../img/retreat-features-1.png");
+  background: url("../img/trail.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -340,8 +338,8 @@ input[type="button"] {
   margin: 0;
 }
 .features i {
-	font-size: 3.75em;
-        margin-bottom: 40px;
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 /* Reviews */
@@ -635,7 +633,7 @@ input[type="button"] {
     width: 75%;
     margin: 0;
   }
-  
+
   /* Footer */
   footer .content-wrapper {
     width: 65%;
@@ -660,16 +658,22 @@ input[type="button"] {
 
   footer p {
     line-height: 1.285;
+    font-size: 2em;
   }
 
   footer .copyright {
     width: 100%;
   }
+  .copyright p {
+    font-size: 1em;
+  }
 
   /* ==========================================================================
      About Page
      ========================================================================== */
-
+  header nav li {
+    padding: 15px;
+  }
   .mission-content {
     display: flex;
     justify-content: space-between;
@@ -693,15 +697,25 @@ input[type="button"] {
 
   .contact-content h4 {
     font-size: 1.5em;
+    line-height: normal;
   }
   h2 {
     text-align: center;
   }
   .map figure {
-    padding-bottom: 45.5%%;
-  
+    padding-bottom: 45.5%;
   }
-  
+  .social {
+    padding-bottom: 80px;
+  }
+  .social h4 {
+    margin-bottom: 40px;
+  }
+  .social p {
+    font-size: 1.5em;
+    line-height: 1.125;
+  }
+
   /* ==========================================================================
      FAQ Page
      ========================================================================== */
@@ -723,6 +737,11 @@ input[type="button"] {
     font-size: 0.875em;
     line-height: 1.125;
   }
+
+.social p {
+  padding-left: 10px;
+  font-size: 1.5em;
+  line-height: 1.125;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -763,6 +782,7 @@ input[type="button"] {
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 30%;
+    margin: 0;
   }
 
   .form-description p {
@@ -787,12 +807,20 @@ input[type="button"] {
   .reviews h2 {
     padding-bottom: 50px;
   }
+  .reviews p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
 
   footer h4 {
     font-size: 1.875em;
-  
   }
-
+  footer p {
+    font-size: 2em;
+  }
+  .social {
+    padding-bottom: 100px;
+  }
   /* ==========================================================================
     About Page
     ========================================================================== */
@@ -807,7 +835,8 @@ input[type="button"] {
     font-size: 1.875em;
   }
   .map figure {
-   padding-bottom: 37.5%;
+    padding-bottom: 37.5%;
+  }
 
   /* ==========================================================================
     FAQ Page
