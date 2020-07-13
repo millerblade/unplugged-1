@@ -230,12 +230,14 @@ footer .content-wrapper {
 }
 
 footer .contact {
+  
   margin-bottom: 50px;
 }
 
 footer .social-icons {
+
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -648,7 +650,7 @@ input[type="button"] {
   }
 
   footer .contact {
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 
   footer h4 {
@@ -788,6 +790,7 @@ input[type="button"] {
 
   footer h4 {
     font-size: 1.875em;
+  
   }
 
   /* ==========================================================================
