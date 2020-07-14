@@ -540,8 +540,13 @@ input[type="button"] {
     font-size: 1.5em;
     line-height: 1.25;
   }
+  p{
+    font-size: 1.5em;
+    line-height:1.25;
+  }
 
-  /* Header */
+
+  /* Tablet Header */
   header {
     justify-content: space-around;
     padding: 33px 0;
@@ -567,7 +572,7 @@ input[type="button"] {
   .header-divider {
     display: none;
   }
-  /* Hero Area */
+  /* Tablet Hero Area */
 
   .hero-area {
     min-height: 600px;
@@ -579,7 +584,7 @@ input[type="button"] {
     margin: 0;
   }
 
-  /* Aside */
+  /* Tablet Aside */
   aside .content-wrapper {
     margin: 50px 0;
     display: flex;
@@ -593,7 +598,7 @@ input[type="button"] {
     margin: 0;
   }
 
-  /* Features */
+  /* Tablet Features */
 
   .features h2 {
     margin-bottom: 20px;
@@ -611,7 +616,7 @@ input[type="button"] {
     width: 62%;
   }
 
-  /* Reviews */
+  /* Tablet Reviews */
   .reviews article {
     display: flex;
     justify-content: space-between;
@@ -633,8 +638,14 @@ input[type="button"] {
     width: 75%;
     margin: 0;
   }
+  .reviews img{
+    padding-top: 6em;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+  }
 
-  /* Footer */
+  /* Tablet Footer */
   footer .content-wrapper {
     width: 65%;
     margin: 100px 0;
@@ -669,7 +680,7 @@ input[type="button"] {
   }
 
   /* ==========================================================================
-     About Page
+     Tablet About Page
      ========================================================================== */
   header nav li {
     padding: 15px;
@@ -717,11 +728,11 @@ input[type="button"] {
   }
 
   /* ==========================================================================
-     FAQ Page
+     Tablet FAQ Page
      ========================================================================== */
 
   .faq .content-wrapper {
-    justify-content: space-between;
+    justify-content:space-between;
   }
 
   .faq-content {
@@ -768,13 +779,13 @@ input[type="button"] {
     font-size: 1.125em;
     line-height: 1.333;
   }
-  /* Hero */
+  /* Desktop Hero */
   .hero-area h1 {
     font-size: 3.75em;
     width: 80%;
   }
 
-  /* Aside */
+  /* Desktop Aside */
   aside .content-wrapper {
     justify-content: space-around;
   }
@@ -789,7 +800,7 @@ input[type="button"] {
     font-size: 1.125em;
   }
 
-  /* Features */
+  /* Desktop Features */
 
   .features h2 {
     width: 90%;
@@ -799,7 +810,7 @@ input[type="button"] {
     flex-basis: 33%;
   }
 
-  /* Reviews */
+  /* Desktop Reviews */
   .reviews article div {
     width: 42%;
   }
@@ -810,6 +821,9 @@ input[type="button"] {
   .reviews p {
     font-size: 1.25em;
     line-height: 1.5em;
+  }
+  .reviews img{
+    padding-top: 10px;
   }
 
   footer h4 {
@@ -822,7 +836,7 @@ input[type="button"] {
     padding-bottom: 100px;
   }
   /* ==========================================================================
-    About Page
+    Desktop About Page
     ========================================================================== */
 
   .mission h2,
@@ -839,7 +853,7 @@ input[type="button"] {
   }
 
   /* ==========================================================================
-    FAQ Page
+    Desktop FAQ Page
     ========================================================================== */
   .faq h2 {
     width: 100%;
