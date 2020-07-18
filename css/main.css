@@ -206,6 +206,7 @@ header nav {
 }
 
 header nav ul {
+  padding-right: 15px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -249,9 +250,9 @@ footer .copyright {
   margin: 20px 0;
 }
 
-/* -------------------- Mobile Styles - Homepage -------------------- */
+/* --------- Mobile Styles - Homepage -------------------- */
 
-/* Hero Area */
+/* mobile Hero Area */
 
 .hero-area {
   background: url(../img/waterfall-1.jpg);
@@ -270,7 +271,7 @@ footer .copyright {
   line-height: 1.2;
 }
 
-/* Aside */
+/* mobile Aside */
 
 aside {
   background-color: #1a2c20;
@@ -306,7 +307,7 @@ input[type="button"] {
   text-transform: uppercase;
 }
 
-/* Features */
+/* mobile Features */
 
 .features {
   background: url("../img/trail.png");
@@ -342,7 +343,7 @@ input[type="button"] {
   margin-bottom: 40px;
 }
 
-/* Reviews */
+/* mobile Reviews */
 
 .reviews {
   background-color: #1a2c20;
@@ -362,7 +363,7 @@ input[type="button"] {
 }
 
 /* ==========================================================================
-     About Page
+     mobile About Page
      ========================================================================== */
 
 .mission {
@@ -401,7 +402,7 @@ input[type="button"] {
 }
 
 /* ==========================================================================
-     FAQ Page
+   mobile  FAQ Page
      ========================================================================== */
 
 .faq {
@@ -523,7 +524,7 @@ input[type="button"] {
      ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-  /*Tablet styles here*/
+  /******* Tablet styles here ****************************/
 
   /* General styles */
   .content-wrapper {
@@ -540,13 +541,12 @@ input[type="button"] {
     font-size: 1.5em;
     line-height: 1.25;
   }
-  p{
+  p {
     font-size: 1.5em;
-    line-height:1.25;
+    line-height: 1.25;
   }
 
-
-  /* Tablet Header */
+  /******** Tablet Header ***********/
   header {
     justify-content: space-around;
     padding: 33px 0;
@@ -572,10 +572,16 @@ input[type="button"] {
   .header-divider {
     display: none;
   }
-  /* Tablet Hero Area */
+  /****** Tablet Hero Area *******************************/
 
   .hero-area {
     min-height: 600px;
+    background: url(../img/waterfall-1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
   }
 
   .hero-area h1 {
@@ -584,7 +590,7 @@ input[type="button"] {
     margin: 0;
   }
 
-  /* Tablet Aside */
+  /****** Tablet Aside ************************************/
   aside .content-wrapper {
     margin: 50px 0;
     display: flex;
@@ -598,7 +604,7 @@ input[type="button"] {
     margin: 0;
   }
 
-  /* Tablet Features */
+  /* Tablet Features ***************************************/
 
   .features h2 {
     margin-bottom: 20px;
@@ -616,7 +622,7 @@ input[type="button"] {
     width: 62%;
   }
 
-  /* Tablet Reviews */
+  /************** Tablet Reviews *************************/
   .reviews article {
     display: flex;
     justify-content: space-between;
@@ -638,14 +644,14 @@ input[type="button"] {
     width: 75%;
     margin: 0;
   }
-  .reviews img{
+  .reviews img {
     padding-top: 6em;
     padding-right: 40px;
     display: flex;
     align-items: center;
   }
 
-  /* Tablet Footer */
+  /*************** Tablet Footer *************************/
   footer .content-wrapper {
     width: 65%;
     margin: 100px 0;
@@ -679,9 +685,7 @@ input[type="button"] {
     font-size: 1em;
   }
 
-  /* ==========================================================================
-     Tablet About Page
-     ========================================================================== */
+  /*============ Tablet About Page ======================= */
   header nav li {
     padding: 15px;
   }
@@ -727,12 +731,10 @@ input[type="button"] {
     line-height: 1.125;
   }
 
-  /* ==========================================================================
-     Tablet FAQ Page
-     ========================================================================== */
+  /*============== Tablet FAQ Page ======================= */
 
   .faq .content-wrapper {
-    justify-content:space-between;
+    justify-content: space-between;
   }
 
   .faq-content {
@@ -749,14 +751,15 @@ input[type="button"] {
     line-height: 1.125;
   }
 
-.social p {
-  padding-left: 10px;
-  font-size: 1.5em;
-  line-height: 1.125;
+  .social p {
+    padding-left: 10px;
+    font-size: 1.5em;
+    line-height: 1.125;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-  /*Desktop styles here*/
+  /********* Desktop styles here **************************/
 
   header {
     padding: 15px 0;
@@ -779,13 +782,21 @@ input[type="button"] {
     font-size: 1.125em;
     line-height: 1.333;
   }
-  /* Desktop Hero */
+  /************** Desktop Hero *****************************/
+  .hero-area {
+    background: url(../img/waterfall-1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
   .hero-area h1 {
     font-size: 3.75em;
     width: 80%;
   }
 
-  /* Desktop Aside */
+  /*************** Desktop Aside ***************************/
   aside .content-wrapper {
     justify-content: space-around;
   }
@@ -800,7 +811,7 @@ input[type="button"] {
     font-size: 1.125em;
   }
 
-  /* Desktop Features */
+  /******************* Desktop Features ********************/
 
   .features h2 {
     width: 90%;
@@ -810,7 +821,7 @@ input[type="button"] {
     flex-basis: 33%;
   }
 
-  /* Desktop Reviews */
+  /******************** Desktop Reviews ********************/
   .reviews article div {
     width: 42%;
   }
@@ -822,7 +833,7 @@ input[type="button"] {
     font-size: 1.25em;
     line-height: 1.5em;
   }
-  .reviews img{
+  .reviews img {
     padding-top: 10px;
   }
 
@@ -835,9 +846,7 @@ input[type="button"] {
   .social {
     padding-bottom: 100px;
   }
-  /* ==========================================================================
-    Desktop About Page
-    ========================================================================== */
+  /* ================Desktop About Page ===================*/
 
   .mission h2,
   .contact-section .content-wrapper h2 {
@@ -852,9 +861,7 @@ input[type="button"] {
     padding-bottom: 37.5%;
   }
 
-  /* ==========================================================================
-    Desktop FAQ Page
-    ========================================================================== */
+  /* ================Desktop FAQ Page ==================== */
   .faq h2 {
     width: 100%;
     font-size: 3em;
