@@ -251,7 +251,7 @@ footer .copyright {
 }
 
 /* --------- Mobile Styles - Homepage -------------------- */
-
+@media only screen and (min-width: 240px) {
 /* mobile Hero Area */
 
 .hero-area {
@@ -269,6 +269,17 @@ footer .copyright {
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.2;
+}
+header nav {
+  width: 20%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header nav ul li {
+  padding: 20px;
 }
 
 /* mobile Aside */
@@ -526,7 +537,7 @@ input[type="button"] {
 @media only screen and (min-width: 768px) {
   /******* Tablet styles here ****************************/
 
-  /* General styles */
+  /* Tablet General styles */
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
@@ -566,7 +577,11 @@ input[type="button"] {
   }
 
   header nav ul {
+    display: flex;
     justify-content: space-between;
+  }
+  header nav ul li {
+    padding-right: 20px;
   }
 
   .header-divider {
